@@ -1,7 +1,7 @@
 # ChIP-seq Analysis Pipeline
 This repository contains a Nextflow pipeline for analyzing ChIP-seq data, including quality control, trimming, alignment, peak calling, and downstream analysis.
 
-Pipeline Overview
+## Pipeline Overview
 The pipeline performs the following steps:
 
 FASTQC – Quality control on raw and trimmed reads.
@@ -32,27 +32,14 @@ ComputeMatrix + PlotProfile – Visualizes ChIP signal over features.
 
 HOMER FindMotifsGenome – Identifies enriched motifs.
 
-Input
+## Input
 Sample sheet: A CSV/TSV file listing your sample metadata and file paths (specified with --samplesheet).
 
 Genome FASTA: Reference genome file (specified with --genome).
 
 Blacklist BED: Regions to exclude during peak filtering (specified with --blacklist).
 
-Example Command
-bash
-Copy
-Edit
-nextflow run main.nf \
-  --samplesheet "samplesheet.csv" \
-  --genome "ref/genome.fa" \
-  --blacklist "ref/blacklist.bed" \
-  --macs3_genome "hs" \
-  --outdir "results"
-Requirements
-Nextflow
-
-Tools and modules:
+## Tools and modules:
 
 FASTQC
 
@@ -72,7 +59,7 @@ deepTools (bamCoverage, computeMatrix, plotProfile, multiBigwigSummary, plotCorr
 
 HOMER
 
-Output
+## Output
 FASTQC reports (raw and trimmed reads)
 
 Trimmed FASTQ files
@@ -95,7 +82,7 @@ Motif enrichment results
 
 ChIP signal heatmaps and profiles
 
-Notes
+## Notes
 The pipeline expects standard ChIP-seq sample naming conventions (e.g., IP_rep1, INPUT_rep1).
 
 Ensure all modules are available in ./modules/.
