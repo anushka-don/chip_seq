@@ -1,0 +1,2 @@
+https://rnnh.github.io/bioinfo-notebook/docs/samtools.html
+https://broadinstitute.github.io/picard/explain-flags.html

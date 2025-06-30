@@ -1,0 +1,14 @@
+name: figures_env
+
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python=3.10
+  - ipykernel
+  - pycirclize
+  - matplotlib
+  - pandas
+  - numpy
+  - jupyterlab
