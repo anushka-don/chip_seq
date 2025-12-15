@@ -1,6 +1,8 @@
 # ChIP-seq Analysis Pipeline
 This repository contains a Nextflow pipeline for analyzing ChIP-seq data, including quality control, trimming, alignment, peak calling, and downstream analysis.
 
+Orginal publication link - https://pmc.ncbi.nlm.nih.gov/articles/PMC5071180/
+
 ## Pipeline Overview
 The pipeline performs the following steps:
 
